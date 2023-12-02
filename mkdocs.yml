@@ -1,22 +1,21 @@
-site_name: Micro Simulations for Education
-site_description: 'Resources for teaching classes on Micro Simulators using generative AI and ChatGPT.'
+site_name: Mkdocs Material Social Card Testing
+site_description: 'Resources learning social Open Graph metadata.'
 site_author: 'Dan McCreary'
 repo_name: 'GitHub Repo'
-site_url: 'https://dmccreary.github.io/microsims'
-repo_url: 'https://github.com/dmccreary/microsims'
+site_url: 'https://dmccreary.github.io/mkdocs-material-social'
+repo_url: 'https://github.com/dmccreary/mkdocs-material-social'
 
 nav:
   - Home: index.md
   - Simulations:
-    - Introduction: sims/index.md
     - Bouncing Ball: sims/bouncing-ball/index.md
 
-    # Dan's MicroSite Standards from here down
+# Dan's MicroSite Standards from here down
 edit_uri: 'blob/master/docs'
 theme:
   name: material
-  logo: img/logo.png
-  favicon: img/favicon.ico
+  # logo: img/logo.png
+  # favicon: img/favicon.ico
   include_sidebar: true
   features:
     - content.code.copy
@@ -30,7 +29,7 @@ theme:
     - navigation.footer
 plugins:
   - search
-  - social
+ - social
 markdown_extensions:
   - admonition
   - pymdownx.details

@@ -42,8 +42,6 @@ DD NOT use objects - just functions.
 Here is an additional example that allows the user to change both the speed and the ball size:
 
 
-* [Bouncing Ball with Speed and Radius Controls](./bouncing-ball-v2.html)
-
 ## Sample Source Code
 
 Here is some sample source code that has been generated and modified just a little for readability.

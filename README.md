@@ -55,3 +55,15 @@ watchdog==3.0.0
 webencodings==0.5.1
 wheel==0.41.2
 ```
+
+Errors:
+
+OSError: no library called "cairo-2" was found
+no library called "cairo" was found
+no library called "libcairo-2" was found
+
+https://github.com/squidfunk/mkdocs-material/issues/5121
+
+```sh
+brew install cairo freetype libffi libjpeg libpng zlib
+```
