@@ -70,6 +70,14 @@ https://github.com/squidfunk/mkdocs-material/issues/5121
 brew install cairo freetype libffi libjpeg libpng zlib
 ```
 
+I had to add the following line to my .zshrc file:
+
+```sh
+export DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/lib
+```
+
+## Other Notes
+
 cp libcairo.2.dylib /usr/local/bin
 Password:
 (social) 1.18.0/lib $ pwd

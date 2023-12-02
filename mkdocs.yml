@@ -29,6 +29,7 @@ theme:
     - navigation.footer
 plugins:
   - search
+  # this is the new line but make sure to follow the brew installs
   - social
 markdown_extensions:
   - admonition
