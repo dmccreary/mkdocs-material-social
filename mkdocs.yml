@@ -8,7 +8,11 @@ repo_url: 'https://github.com/dmccreary/mkdocs-material-social'
 nav:
   - Home: index.md
   - Simulations:
+    - Introduction: sims/index.md
     - Bouncing Ball: sims/bouncing-ball/index.md
+    - Gold Star: sims/gold-star/index.md
+    - Polygon: sims/polygon/index.md
+    - Sphere: sims/sphere/index.md
 
 # Dan's MicroSite Standards from here down
 edit_uri: 'blob/master/docs'
@@ -32,12 +36,12 @@ plugins:
   # this is the new line but make sure to follow the brew installs
   - social
 markdown_extensions:
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
-  - attr_list
-  - md_in_html
-  - pymdownx.highlight:
+   - attr_list
+   - md_in_html
+   - admonition
+   - pymdownx.details
+   - pymdownx.superfences
+   - pymdownx.highlight:
       linenums: true
 extra:
   analytics:

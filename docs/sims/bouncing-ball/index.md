@@ -1,9 +1,20 @@
 # Bouncing Ball
 
-<figure>
-    ![](./bouncing-ball.png){ width="200" }
+<!-- 
+The figure markup is causing the image to not render in this version.
+
+<figure markdown>
+    ![Bouncing Ball](./bouncing-ball.png){ width="400" }
     <figcaption>A bouncing ball is our "Hello World!".</figcaption>
 </figure>
+-->
+
+<figure markdown>
+   ![Bouncing Ball](./bouncing-ball.png){ width="400" }
+    <figcaption>A bouncing ball is our "Hello World!".</figcaption>
+</figure>
+
+[Link to Bouncing Ball Demo](./bouncing-ball.html){ .md-button .md-button--primary }
 
 The bouncing ball is the "Hello World!" of the Processing system.
 It contains the key element that shows the power of the Processing system:
@@ -12,7 +23,7 @@ want clearly visible user interface elements that can control
 the running of our simulations.  This version contains a 
 slider to control the speed of the ball's movement.
 
-[Link to Bouncing Ball Demo](./bouncing-ball.html){ .md-button .md-button--primary }
+
 
 ## Prompt
 
