@@ -1,6 +1,9 @@
 # Bouncing Ball
 
 <!-- 
+
+<meta property="og:image" content="./bouncing-ball.png" />
+
 The figure markup is causing the image to not render in this version.
 
 <figure markdown>

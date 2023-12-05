@@ -1,5 +1,11 @@
 # Mkdocs Material Social Testing
 
+This site is for testing the Mkdocs Material Social links.
+
+Here is our website:
+
+[https://dmccreary.github.io/mkdocs-material-social/](https://dmccreary.github.io/mkdocs-material-social/)
+
 
 ```sh
 conda deactivate
@@ -114,3 +120,9 @@ ln -s ../../Cellar/cairo/1.18.0/lib/pkgconfig/cairo-xlib.pc cairo-xlib.pc
 ln -s ../../Cellar/cairo/1.18.0/lib/pkgconfig/cairo.pc cairo.pc
 
 https://github.com/dora-metrics/pelorus/issues/1073
+
+## Sample Markup for an Image:
+
+```markdown
+
+```
