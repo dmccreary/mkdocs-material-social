@@ -2,37 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://dmccreary.github.io/mkdocs-material-social/</loc>
-         <lastmod>2023-12-05</lastmod>
+         <lastmod>2023-12-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/mkdocs-material-social/contact/</loc>
+         <lastmod>2023-12-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/mkdocs-material-social/references/</loc>
+         <lastmod>2023-12-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dmccreary.github.io/mkdocs-material-social/sims/</loc>
-         <lastmod>2023-12-05</lastmod>
+         <lastmod>2023-12-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dmccreary.github.io/mkdocs-material-social/sims/bouncing-ball/</loc>
-         <lastmod>2023-12-05</lastmod>
+         <lastmod>2023-12-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dmccreary.github.io/mkdocs-material-social/sims/gold-star/</loc>
-         <lastmod>2023-12-05</lastmod>
+         <lastmod>2023-12-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dmccreary.github.io/mkdocs-material-social/sims/override-test/</loc>
-         <lastmod>2023-12-05</lastmod>
+         <lastmod>2023-12-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dmccreary.github.io/mkdocs-material-social/sims/polygon/</loc>
-         <lastmod>2023-12-05</lastmod>
+         <lastmod>2023-12-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dmccreary.github.io/mkdocs-material-social/sims/sphere/</loc>
-         <lastmod>2023-12-05</lastmod>
+         <lastmod>2023-12-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
