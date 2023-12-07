@@ -36,6 +36,10 @@ theme:
     - navigation.top
     # this adds the prev and next icons in the footer
     - navigation.footer
+  palette:
+    - scheme: default
+      - primary: blue
+      - accent: orange
 plugins:
   - search
   # this is the new line but make sure to follow the brew installs

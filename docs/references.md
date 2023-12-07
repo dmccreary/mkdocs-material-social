@@ -10,3 +10,4 @@ and the [Material Theme](https://squidfunk.github.io/mkdocs-material/)
 * [Discussion](https://github.com/squidfunk/mkdocs-material/discussions/5162)
 * [Open Graph Test](https://www.opengraph.xyz/url/https%3A%2F%2Fmkdocs-social.krypton.ninja%2F)
 * [YouTube Video](https://www.youtube.com/watch?v=4OjnOc6ftJ8)
+* [Favicon Converter](https://favicon.io/favicon-converter/) - used to generate the site favicon from the logo
