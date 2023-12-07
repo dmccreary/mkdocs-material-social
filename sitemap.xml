@@ -11,6 +11,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/mkdocs-material-social/how-we-built-this-site/</loc>
+         <lastmod>2023-12-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/mkdocs-material-social/references/</loc>
          <lastmod>2023-12-07</lastmod>
          <changefreq>daily</changefreq>
