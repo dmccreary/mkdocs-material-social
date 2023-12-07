@@ -14,6 +14,7 @@ nav:
     - Polygon: sims/polygon/index.md
     - Sphere: sims/sphere/index.md
     - Override Test: sims/override-test/index.md
+    - Template: sims/template/index.md
   - References: references.md
   - Contact: contact.md
 
