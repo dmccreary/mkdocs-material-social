@@ -33,3 +33,8 @@ theme:
 ```
 
 ## Social
+
+```yaml
+  - social:
+    cards_layout: default/variant
+```

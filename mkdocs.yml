@@ -43,7 +43,8 @@ theme:
 plugins:
   - search
   # this is the new line but make sure to follow the brew installs
-  - social
+  - social:
+    cards_layout: default/variant
 markdown_extensions:
    - attr_list
    - md_in_html
