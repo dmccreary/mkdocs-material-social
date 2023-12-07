@@ -38,8 +38,8 @@ theme:
     - navigation.footer
   palette:
     - scheme: default
-      - primary: blue
-      - accent: orange
+      primary: blue
+      accent: orange
 plugins:
   - search
   # this is the new line but make sure to follow the brew installs
