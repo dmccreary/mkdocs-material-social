@@ -23,8 +23,8 @@ nav:
 edit_uri: 'blob/master/docs'
 theme:
   name: material
-  # logo: img/logo.png
-  # favicon: img/favicon.ico
+  logo: img/code-savvy-logo.png
+  favicon: img/favicon.ico
   include_sidebar: true
   features:
     - content.code.copy
