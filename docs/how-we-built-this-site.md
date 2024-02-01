@@ -2,6 +2,27 @@
 
 ## Mkdocs
 
+## Mkdocs Material
+
+```sh
+pip show mkdocs-material
+```
+
+Result:
+
+```
+Name: mkdocs-material
+Version: 9.4.14
+Summary: Documentation that simply works
+Home-page: 
+Author: 
+Author-email: Martin Donath <martin.donath@squidfunk.com>
+License: 
+Location: /Users/danmccreary/miniconda3/envs/social/lib/python3.12/site-packages
+Requires: babel, colorama, jinja2, markdown, mkdocs, mkdocs-material-extensions, paginate, pygments, pymdown-extensions, regex, requests
+Required-by: 
+```
+
 ## Theme
 
 ### Scheme Colors
