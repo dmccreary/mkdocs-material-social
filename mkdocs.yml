@@ -47,6 +47,7 @@ theme:
       accent: orange
 plugins:
   - search
+  - disable_social_for_pages_with_local_image
   - social
 extra_css:
   - css/extra.css
