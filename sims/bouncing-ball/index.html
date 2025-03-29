@@ -94,21 +94,17 @@
     
     <script>
       document.addEventListener('DOMContentLoaded', function() {
-        // Find all og:image meta tags
-        const ogTags = document.querySelectorAll('meta[property="og:image"]');
+        // Find all meta tags
+        const metaTags = document.querySelectorAll('meta');
         
-        // Remove all og:image tags except the custom one
-        for (let i = 0; i < ogTags.length; i++) {
-          if (ogTags[i].id !== 'custom-og-image') {
-            ogTags[i].parentNode.removeChild(ogTags[i]);
-          }
-        }
-        
-        // Do the same for twitter:image
-        const twitterTags = document.querySelectorAll('meta[name="twitter:image"]');
-        for (let i = 0; i < twitterTags.length; i++) {
-          if (twitterTags[i].id !== 'custom-twitter-image') {
-            twitterTags[i].parentNode.removeChild(twitterTags[i]);
+        // Iterate through meta tags and remove those with "/assets/images/social/" in their content
+        for (let i = 0; i < metaTags.length; i++) {
+          const tag = metaTags[i];
+          const content = tag.getAttribute('content');
+          
+          // Check if content contains the social card path
+          if (content && content.includes('/assets/images/social/')) {
+            tag.parentNode.removeChild(tag);
           }
         }
       });
