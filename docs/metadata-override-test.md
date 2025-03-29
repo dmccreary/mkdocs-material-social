@@ -1,9 +1,9 @@
 ---
 title: My Custom Page Title
 description: A custom description for this page.
-image: https://dmccreary.github.io/mkdocs-material-social/img/local-image.png
-og:image: https://dmccreary.github.io/mkdocs-material-social/img/local-image.png
-twitter:image: https://dmccreary.github.io/mkdocs-material-social/img/local-image.png
+image: img/local-image.png
+og:image: img/local-image.png
+twitter:image: img/local-image.png
 ---
 <!--
 <meta property="og:image" content="https://dmccreary.github.io/mkdocs-material-social/img/local-image.png" />
