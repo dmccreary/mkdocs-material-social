@@ -1,9 +1,9 @@
 ---
 title: My Custom Page Title
 description: A custom description for this page.
-image: https://github.com/dmccreary/mkdocs-material-social/blob/gh-pages/img/local-image.png  # relative to site root
-og:image: https://github.com/dmccreary/mkdocs-material-social/blob/gh-pages/img/local-image.png  # optional redundancy
-twitter:image: https://github.com/dmccreary/mkdocs-material-social/blob/gh-pages/img/local-image.png  # optional
+image: https://dmccreary.github.io/mkdocs-material-social/img/local-image.png  # relative to site root
+og:image: https://dmccreary.github.io/mkdocs-material-social/img/local-image.png  # optional redundancy
+twitter:image: https://dmccreary.github.io/mkdocs-material-social/img/local-image.png  # optional
 ---
 
 # Test of Metadata Override
@@ -14,7 +14,8 @@ Relative Link to ```./img/local-image.png```:
 ![](./img/local-image.png)
 
 Absolute Link to gh-pages:
-![](https://github.com/dmccreary/mkdocs-material-social/blob/gh-pages/img/local-image.png)
+
+![](https://dmccreary.github.io/mkdocs-material-social/img/local-image.png)
 
 You can test this with the following link:
 
