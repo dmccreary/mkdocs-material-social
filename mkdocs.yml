@@ -49,8 +49,12 @@ plugins:
   # - meta-descriptions
   - search
   # this is the new line but make sure to follow the brew installs
-  - social
+  # - social
     # cards_layout: default/variant
+  - social:
+      cards: true
+      cards_layout_options:
+        font_family: Roboto
 extra_css:
   - css/extra.css
 markdown_extensions:
