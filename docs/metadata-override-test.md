@@ -1,9 +1,9 @@
 ---
 title: My Custom Page Title
 description: A custom description for this page.
-image: ../img/local-image.png  # relative to site root
-og:image: ..img/local-image.png  # optional redundancy
-twitter:image: ../img/local-image.png  # optional
+image: https://github.com/dmccreary/mkdocs-material-social/blob/gh-pages/img/local-image.png  # relative to site root
+og:image: https://github.com/dmccreary/mkdocs-material-social/blob/gh-pages/img/local-image.png  # optional redundancy
+twitter:image: https://github.com/dmccreary/mkdocs-material-social/blob/gh-pages/img/local-image.png  # optional
 ---
 
 # Test of Metadata Override
