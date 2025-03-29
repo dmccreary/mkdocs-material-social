@@ -85,10 +85,22 @@
   
   
   
-    <!-- Override social meta tags with our custom image -->
-    <meta property="og:image" content="https://dmccreary.github.io/mkdocs-material-social/https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Earth_from_Space.jpg/240px-Earth_from_Space.jpg">
-    <meta name="twitter:image" content="https://dmccreary.github.io/mkdocs-material-social/https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Earth_from_Space.jpg/240px-Earth_from_Space.jpg">
+    <!-- Only override social cards for pages with custom images -->
+    <meta property="og:image" content="https://dmccreary.github.io/mkdocs-material-social/https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Earth_from_Space.jpg/240px-Earth_from_Space.jpg" id="custom-og-image">
+    <meta name="twitter:image" content="https://dmccreary.github.io/mkdocs-material-social/https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Earth_from_Space.jpg/240px-Earth_from_Space.jpg" id="custom-twitter-image">
     <meta name="twitter:card" content="summary_large_image">
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Find and remove social plugin's og:image tags
+        const ogTags = document.querySelectorAll('meta[property="og:image"]:not(#custom-og-image)');
+        ogTags.forEach(tag => tag.remove());
+        
+        // Find and remove social plugin's twitter:image tags
+        const twitterTags = document.querySelectorAll('meta[name="twitter:image"]:not(#custom-twitter-image)');
+        twitterTags.forEach(tag => tag.remove());
+      });
+    </script>
   
 
   </head>
