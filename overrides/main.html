@@ -2,10 +2,5 @@
 
 {% block extrahead %}
   {{ super() }}
-  {% set image = page.meta.image %}
-  {% if image %}
-    {% set image_url = config.site_url ~ image %}
-    <meta property="og:image" content="{{ image_url }}">
-    <meta property="twitter:image" content="{{ image_url }}">
-  {% endif %}
+  {% include "partials/social.html" %}
 {% endblock %}

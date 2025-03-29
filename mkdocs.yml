@@ -46,14 +46,8 @@ theme:
       primary: blue
       accent: orange
 plugins:
-  # - meta this is no by default
-  # - meta-descriptions
   - search
-  # this is the new line but make sure to follow the brew installs
   # - social
-    # cards_layout: default/variant
-  - social:
-      cards: false
 extra_css:
   - css/extra.css
 markdown_extensions:
