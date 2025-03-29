@@ -87,27 +87,35 @@
   
   
   
-    <!-- Custom meta tags -->
-    <meta property="og:image" content="https://dmccreary.github.io/mkdocs-material-social/../../img/bouncing-ball.png" id="custom-og-image">
-    <meta name="twitter:image" content="https://dmccreary.github.io/mkdocs-material-social/../../img/bouncing-ball.png" id="custom-twitter-image">
-    <meta name="twitter:card" content="summary_large_image">
+    <!-- Add these meta tags early in the head to override any later ones -->
+    <link rel="preconnect" href="https://dmccreary.github.io/mkdocs-material-social/">
+    <meta property="og:image" content="https://dmccreary.github.io/mkdocs-material-social//img/bouncing-ball.png">
+    <meta name="twitter:image" content="https://dmccreary.github.io/mkdocs-material-social//img/bouncing-ball.png">
     
+    <!-- Script to replace metadata -->
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // Find all meta tags
-        const metaTags = document.querySelectorAll('meta');
+      // This script runs as soon as it's loaded, before DOMContentLoaded
+      (function() {
+        // Create a mutation observer to watch for meta tags
+        var observer = new MutationObserver(function(mutations) {
+          mutations.forEach(function(mutation) {
+            if (mutation.type === 'childList') {
+              var metaTags = document.querySelectorAll('meta[property="og:image"], meta[name="twitter:image"]');
+              
+              metaTags.forEach(function(tag) {
+                var content = tag.getAttribute('content');
+                if (content && content.includes('/assets/images/social/')) {
+                  // Replace content with our custom image
+                  tag.setAttribute('content', 'https://dmccreary.github.io/mkdocs-material-social//img/bouncing-ball.png');
+                }
+              });
+            }
+          });
+        });
         
-        // Iterate through meta tags and remove those with "/assets/images/social/" in their content
-        for (let i = 0; i < metaTags.length; i++) {
-          const tag = metaTags[i];
-          const content = tag.getAttribute('content');
-          
-          // Check if content contains the social card path
-          if (content && content.includes('/assets/images/social/')) {
-            tag.parentNode.removeChild(tag);
-          }
-        }
-      });
+        // Start observing the document head
+        observer.observe(document.head, { childList: true, subtree: true });
+      })();
     </script>
   
 
