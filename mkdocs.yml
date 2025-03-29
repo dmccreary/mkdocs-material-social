@@ -7,7 +7,8 @@ repo_url: 'https://github.com/dmccreary/mkdocs-material-social'
 
 nav:
   - Home: index.md
-  - Simulations:
+  - Gallery: gallery.md
+  - Micro Simulations:
     - Introduction: sims/index.md
     - Bouncing Ball: sims/bouncing-ball/index.md
     - Gold Star: sims/gold-star/index.md
@@ -15,6 +16,7 @@ nav:
     - Sphere: sims/sphere/index.md
     - Override Test: sims/override-test/index.md
     - Template: sims/template/index.md
+    - Grid Test: ../grid-test.md
   - References: references.md
   - Contact: contact.md
   - Test Metadata: test-metadata.md
@@ -45,7 +47,8 @@ plugins:
   # this is the new line but make sure to follow the brew installs
   - social
     # cards_layout: default/variant
-
+extra_css:
+  - css/extra.css
 markdown_extensions:
    - attr_list
    - md_in_html
