@@ -47,8 +47,8 @@ theme:
       accent: orange
 plugins:
   - search
-  - disable_social_for_pages_with_local_image
-  - social
+  - social:
+      cards_layout_dir: overrides/partial/social
 extra_css:
   - css/extra.css
 markdown_extensions:
