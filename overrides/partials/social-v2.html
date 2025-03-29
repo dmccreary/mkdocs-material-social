@@ -1,7 +1,7 @@
 {% if page and page.meta %}
-  {# Check if custom image or social card metadata exists #}
+  {# Check if the custom image exists in metadata #}
   {% if page.meta.image or page.meta["og:image"] or page.meta["twitter:image"] %}
-    {# Custom image from page metadata takes priority #}
+    {# Use custom image from metadata if available #}
     {% if page.meta["og:image"] %}
       <meta property="og:image" content="{{ config.site_url ~ page.meta['og:image'] }}">
     {% else %}
@@ -13,18 +13,15 @@
     {% else %}
       <meta name="twitter:image" content="{{ config.site_url ~ page.meta.image }}">
     {% endif %}
-    
+
     <meta name="twitter:card" content="summary_large_image">
     
   {% else %}
-    {# Only include social plugin generated image if no custom image is defined #}
+    {# Fallback to default social card if no custom image is set #}
     {% if config.extra.social and config.extra.social.image %}
       <meta property="og:image" content="{{ config.site_url ~ config.extra.social.image }}">
       <meta name="twitter:image" content="{{ config.site_url ~ config.extra.social.image }}">
       <meta name="twitter:card" content="summary_large_image">
-    {% elif config.extra.social %}
-      {# Include default social card logic from social plugin #}
-      {% include "partials/social-plugin.html" %}
     {% endif %}
   {% endif %}
 {% endif %}
