@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+  
+  {% if page and page.meta and page.meta.image %}
+    <!-- Custom meta tags -->
+    <meta property="og:image" content="{{ config.site_url }}{{ page.meta.image|url }}" id="custom-og-image">
+    <meta name="twitter:image" content="{{ config.site_url }}{{ page.meta.image|url }}" id="custom-twitter-image">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Find all meta tags
+        const metaTags = document.querySelectorAll('meta');
+        
+        // Iterate through meta tags and remove those with "/assets/images/social/" in their content
+        for (let i = 0; i < metaTags.length; i++) {
+          const tag = metaTags[i];
+          const content = tag.getAttribute('content');
+          
+          // Check if content contains the social card path
+          if (content && content.includes('/assets/images/social/')) {
+            tag.parentNode.removeChild(tag);
+          }
+        }
+      });
+    </script>
+  {% endif %}
+{% endblock %}
