@@ -4,6 +4,8 @@ description: A custom description for this page.
 image: img/local-image-2.png
 og:image: img/local-image-2.png
 twitter:image: img/local-image-2.png
+social:
+  cards: false
 ---
 <!--
 <meta property="og:image" content="https://dmccreary.github.io/mkdocs-material-social/img/local-image.png" />
