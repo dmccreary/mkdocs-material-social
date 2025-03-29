@@ -1,3 +1,5 @@
+<meta property="og:image" content="https://dmccreary.github.io/mkdocs-material-social/img/local-image.png" />
+
 ---
 title: My Custom Page Title
 description: A custom description for this page.
