@@ -26,7 +26,7 @@
     
     
       
-        <title>Social Image Preview Override From Markdown Metadata v9 - Mkdocs Material Social Card Testing</title>
+        <title>Social Image Preview Override From Markdown Metadata v10 - Mkdocs Material Social Card Testing</title>
       
     
     
@@ -60,7 +60,7 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Social Image Preview Override From Markdown Metadata v9 - Mkdocs Material Social Card Testing" >
+        <meta  property="og:title"  content="Social Image Preview Override From Markdown Metadata v10 - Mkdocs Material Social Card Testing" >
       
         <meta  property="og:description"  content="A custom description for this page." >
       
@@ -76,7 +76,7 @@
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Social Image Preview Override From Markdown Metadata v9 - Mkdocs Material Social Card Testing" >
+        <meta  name="twitter:title"  content="Social Image Preview Override From Markdown Metadata v10 - Mkdocs Material Social Card Testing" >
       
         <meta  name="twitter:description"  content="A custom description for this page." >
       
@@ -87,22 +87,15 @@
   
   
   
-    <!-- Only override social cards for pages with custom images -->
-    <meta property="og:image" content="https://dmccreary.github.io/mkdocs-material-social/img/local-image-2.png" id="custom-og-image">
-    <meta name="twitter:image" content="https://dmccreary.github.io/mkdocs-material-social/img/local-image-2.png" id="custom-twitter-image">
+    <!-- Custom social media tags -->
+
+  
+    <!-- Remove any existing meta tags by not including them -->
+    <meta property="og:image" content="https://dmccreary.github.io/mkdocs-material-social//img/local-image-2.png">
+    <meta name="twitter:image" content="https://dmccreary.github.io/mkdocs-material-social//img/local-image-2.png">
     <meta name="twitter:card" content="summary_large_image">
-    
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // Find and remove social plugin's og:image tags
-        const ogTags = document.querySelectorAll('meta[property="og:image"]:not(#custom-og-image)');
-        ogTags.forEach(tag => tag.remove());
-        
-        // Find and remove social plugin's twitter:image tags
-        const twitterTags = document.querySelectorAll('meta[name="twitter:image"]:not(#custom-twitter-image)');
-        twitterTags.forEach(tag => tag.remove());
-      });
-    </script>
+  
+
   
 
   </head>
@@ -117,7 +110,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#test-of-metadata-override-v9" class="md-skip">
+        <a href="#test-of-metadata-override-v10" class="md-skip">
           Skip to content
         </a>
       
@@ -152,7 +145,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Social Image Preview Override From Markdown Metadata v9
+              Social Image Preview Override From Markdown Metadata v10
             
           </span>
         </div>
@@ -550,7 +543,7 @@
 <meta property="og:image" content="https://dmccreary.github.io/mkdocs-material-social/img/local-image.png" />
 -->
 
-<h1 id="test-of-metadata-override-v9">Test of Metadata Override v9</h1>
+<h1 id="test-of-metadata-override-v10">Test of Metadata Override v10</h1>
 <p>The following image should be shown when rendered on social media previews:</p>
 <p>Relative Link to <code>img/local-image.png</code>:
 <img alt="" src="../img/local-image.png" /></p>
