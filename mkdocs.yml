@@ -47,7 +47,7 @@ theme:
       accent: orange
 plugins:
   - search
-  # - social
+  - social
 extra_css:
   - css/extra.css
 markdown_extensions:
