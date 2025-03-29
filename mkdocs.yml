@@ -43,7 +43,7 @@ theme:
       primary: blue
       accent: orange
 plugins:
-  - meta
+  - meta-descriptions
   - search
   # this is the new line but make sure to follow the brew installs
   - social
