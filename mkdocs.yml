@@ -16,8 +16,9 @@ nav:
     - Sphere: sims/sphere/index.md
     - Override Test: sims/override-test/index.md
     - Template: sims/template/index.md
-    - Grid Test: sims/grid-test.md
+  - Grid Test: grid-test.md
   - Metadata Override Test: metadata-override-test.md
+  - How We Built This Site: how-we-built-this-site.md
   - References: references.md
   - Contact: contact.md
   - Test Metadata: test-metadata.md
@@ -26,7 +27,7 @@ nav:
 edit_uri: 'blob/master/docs'
 theme:
   name: material
-  logo: img/code-savvy-logo.png
+  logo: img/local-image.png
   favicon: img/favicon.ico
   include_sidebar: true
   features:
@@ -44,7 +45,8 @@ theme:
       primary: blue
       accent: orange
 plugins:
-  - meta-descriptions
+  # - meta this is no by default
+  # - meta-descriptions
   - search
   # this is the new line but make sure to follow the brew installs
   - social
