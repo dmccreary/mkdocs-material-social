@@ -26,7 +26,7 @@
     
     
       
-        <title>Social Image Preview Override From Markdown Metadata v12 - Mkdocs Material Social Card Testing</title>
+        <title>Social Image Preview Override From Markdown Metadata v13 - Mkdocs Material Social Card Testing</title>
       
     
     
@@ -60,7 +60,7 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Social Image Preview Override From Markdown Metadata v12 - Mkdocs Material Social Card Testing" >
+        <meta  property="og:title"  content="Social Image Preview Override From Markdown Metadata v13 - Mkdocs Material Social Card Testing" >
       
         <meta  property="og:description"  content="A custom description for this page." >
       
@@ -76,7 +76,7 @@
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Social Image Preview Override From Markdown Metadata v12 - Mkdocs Material Social Card Testing" >
+        <meta  name="twitter:title"  content="Social Image Preview Override From Markdown Metadata v13 - Mkdocs Material Social Card Testing" >
       
         <meta  name="twitter:description"  content="A custom description for this page." >
       
@@ -84,6 +84,37 @@
       
     
     
+  
+  
+  
+    <!-- Custom meta tags -->
+    <meta property="og:image" content="https://dmccreary.github.io/mkdocs-material-social/../img/local-image-2.png" id="custom-og-image">
+    <meta name="twitter:image" content="https://dmccreary.github.io/mkdocs-material-social/../img/local-image-2.png" id="custom-twitter-image">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Find all og:image meta tags
+        const ogTags = document.querySelectorAll('meta[property="og:image"]');
+        
+        // Remove all og:image tags except the custom one
+        for (let i = 0; i < ogTags.length; i++) {
+          if (ogTags[i].id !== 'custom-og-image') {
+            ogTags[i].parentNode.removeChild(ogTags[i]);
+          }
+        }
+        
+        // Do the same for twitter:image
+        const twitterTags = document.querySelectorAll('meta[name="twitter:image"]');
+        for (let i = 0; i < twitterTags.length; i++) {
+          if (twitterTags[i].id !== 'custom-twitter-image') {
+            twitterTags[i].parentNode.removeChild(twitterTags[i]);
+          }
+        }
+      });
+    </script>
+  
+
   </head>
   
   
@@ -96,7 +127,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#test-of-metadata-override-v12" class="md-skip">
+        <a href="#test-of-metadata-override-v13" class="md-skip">
           Skip to content
         </a>
       
@@ -131,7 +162,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Social Image Preview Override From Markdown Metadata v12
+              Social Image Preview Override From Markdown Metadata v13
             
           </span>
         </div>
@@ -529,7 +560,7 @@
 <meta property="og:image" content="https://dmccreary.github.io/mkdocs-material-social/img/local-image.png" />
 -->
 
-<h1 id="test-of-metadata-override-v12">Test of Metadata Override v12</h1>
+<h1 id="test-of-metadata-override-v13">Test of Metadata Override v13</h1>
 <p>The following image should be shown when rendered on social media previews:</p>
 <p>Relative Link to <code>img/local-image.png</code>:
 <img alt="" src="../img/local-image.png" /></p>

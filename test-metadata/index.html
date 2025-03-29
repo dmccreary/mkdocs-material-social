@@ -82,6 +82,37 @@
       
     
     
+  
+  
+  
+    <!-- Custom meta tags -->
+    <meta property="og:image" content="https://dmccreary.github.io/mkdocs-material-social/https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Earth_from_Space.jpg/240px-Earth_from_Space.jpg" id="custom-og-image">
+    <meta name="twitter:image" content="https://dmccreary.github.io/mkdocs-material-social/https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Earth_from_Space.jpg/240px-Earth_from_Space.jpg" id="custom-twitter-image">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Find all og:image meta tags
+        const ogTags = document.querySelectorAll('meta[property="og:image"]');
+        
+        // Remove all og:image tags except the custom one
+        for (let i = 0; i < ogTags.length; i++) {
+          if (ogTags[i].id !== 'custom-og-image') {
+            ogTags[i].parentNode.removeChild(ogTags[i]);
+          }
+        }
+        
+        // Do the same for twitter:image
+        const twitterTags = document.querySelectorAll('meta[name="twitter:image"]');
+        for (let i = 0; i < twitterTags.length; i++) {
+          if (twitterTags[i].id !== 'custom-twitter-image') {
+            twitterTags[i].parentNode.removeChild(twitterTags[i]);
+          }
+        }
+      });
+    </script>
+  
+
   </head>
   
   
