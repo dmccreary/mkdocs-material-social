@@ -10,7 +10,11 @@ twitter:image: https://github.com/dmccreary/mkdocs-material-social/blob/gh-pages
 
 The following image should be shown when rendered on social media previews:
 
+Relative Link to ```./img/local-image.png```:
 ![](./img/local-image.png)
+
+Absolute Link to gh-pages:
+![](https://github.com/dmccreary/mkdocs-material-social/blob/gh-pages/img/local-image.png)
 
 You can test this with the following link:
 
