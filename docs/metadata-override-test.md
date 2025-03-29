@@ -14,4 +14,6 @@ The following image should be shown when rendered on social media previews:
 
 You can test this with the following link:
 
-[Social Share Preview.com](https://socialsharepreview.com/?url=https://dmccreary.github.io/mkdocs-material-social/metadata-override-test/)
+[SocialSharePreview.com](https://socialsharepreview.com/?url=https://dmccreary.github.io/mkdocs-material-social/metadata-override-test/)
+
+[Metatags.io](https://metatags.io/)
