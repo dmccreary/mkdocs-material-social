@@ -29,6 +29,7 @@ theme:
   name: material
   logo: img/local-image.png
   favicon: img/favicon.ico
+  custom_dir: overrides
   include_sidebar: true
   features:
     - content.code.copy
