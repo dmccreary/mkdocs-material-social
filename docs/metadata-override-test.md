@@ -1,5 +1,5 @@
 ---
-title: Social Image Preview Override From Markdown Metadata v12
+title: Social Image Preview Override From Markdown Metadata v13
 description: A custom description for this page.
 image: img/local-image-2.png
 og:image: img/local-image-2.png
@@ -11,7 +11,7 @@ social:
 <meta property="og:image" content="https://dmccreary.github.io/mkdocs-material-social/img/local-image.png" />
 -->
 
-# Test of Metadata Override v12
+# Test of Metadata Override v13
 
 The following image should be shown when rendered on social media previews:
 

@@ -1,3 +1,13 @@
+---
+title: Bouncing Ball Social Image Preview
+description: A MicroSim of a bouncing ball.
+image: img/bouncing-ball.png
+og:image: img/bouncing-ball.png
+twitter:image: img/bouncing-ball.png
+social:
+   cards: false
+---
+
 # Bouncing Ball
 
 <!-- 
