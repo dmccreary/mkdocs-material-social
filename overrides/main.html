@@ -4,21 +4,6 @@
   {{ super() }}
   
   {% if page and page.meta and page.meta.image %}
-    <!-- Only override social cards for pages with custom images -->
-    <meta property="og:image" content="{{ config.site_url ~ page.meta.image }}" id="custom-og-image">
-    <meta name="twitter:image" content="{{ config.site_url ~ page.meta.image }}" id="custom-twitter-image">
-    <meta name="twitter:card" content="summary_large_image">
-    
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // Find and remove social plugin's og:image tags
-        const ogTags = document.querySelectorAll('meta[property="og:image"]:not(#custom-og-image)');
-        ogTags.forEach(tag => tag.remove());
-        
-        // Find and remove social plugin's twitter:image tags
-        const twitterTags = document.querySelectorAll('meta[name="twitter:image"]:not(#custom-twitter-image)');
-        twitterTags.forEach(tag => tag.remove());
-      });
-    </script>
+    {% include "partials/social.html" %}
   {% endif %}
 {% endblock %}
