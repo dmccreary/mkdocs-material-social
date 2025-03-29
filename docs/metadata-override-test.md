@@ -1,18 +1,17 @@
 ---
-title: Social Image Preview Override From Markdown Metadata v8
+title: Social Image Preview Override From Markdown Metadata v9
 description: A custom description for this page.
 image: img/local-image-2.png
 og:image: img/local-image-2.png
 twitter:image: img/local-image-2.png
 social:
-  cards_layout_options:
-    background_image: img/local-image.png
+   cards: false
 ---
 <!--
 <meta property="og:image" content="https://dmccreary.github.io/mkdocs-material-social/img/local-image.png" />
 -->
 
-# Test of Metadata Override v8
+# Test of Metadata Override v9
 
 The following image should be shown when rendered on social media previews:
 
