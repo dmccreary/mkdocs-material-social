@@ -1,9 +1,9 @@
 ---
-title: My Custom Page Title
+title: Social Image Preview From Markdown Metadata
 description: A custom description for this page.
-image: img/local-image.png
-og:image: img/local-image.png
-twitter:image: img/local-image.png
+image: img/local-image-2.png
+og:image: img/local-image-2.png
+twitter:image: img/local-image-2.png
 ---
 <!--
 <meta property="og:image" content="https://dmccreary.github.io/mkdocs-material-social/img/local-image.png" />
