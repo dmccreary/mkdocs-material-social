@@ -52,11 +52,7 @@ plugins:
   # - social
     # cards_layout: default/variant
   - social:
-      cards: true
-      cards_layout: default
-      cards_layout_options:
-        # To use your image as the full background:
-        background_image: "{image}"  # This will use the image from page metadata
+      cards: false
 extra_css:
   - css/extra.css
 markdown_extensions:
