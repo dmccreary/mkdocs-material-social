@@ -28,7 +28,6 @@ edit_uri: 'blob/master/docs'
 theme:
   name: material
   logo: img/local-image.png
-  favicon: img/favicon.ico
   custom_dir: overrides
   include_sidebar: true
   features:
@@ -39,16 +38,10 @@ theme:
     - navigation.indexes
     - toc.follow
     - navigation.top
-    # this adds the prev and next icons in the footer
     - navigation.footer
-  palette:
-    - scheme: default
-      primary: blue
-      accent: orange
 plugins:
   - search
-  - social:
-      cards_layout_dir: overrides/partial/social
+  - social
 extra_css:
   - css/extra.css
 markdown_extensions:
@@ -59,8 +52,3 @@ markdown_extensions:
    - pymdownx.superfences
    - pymdownx.highlight:
       linenums: true
-extra:
-  analytics:
-    provider: google
-    # https://analytics.google.com/analytics/web/#/a1420179p349994530/admin/streams/table/4433129821
-    property: G-BBR7MPK96Z
