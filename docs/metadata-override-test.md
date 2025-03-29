@@ -1,5 +1,3 @@
-<meta property="og:image" content="https://dmccreary.github.io/mkdocs-material-social/img/local-image.png" />
-
 ---
 title: My Custom Page Title
 description: A custom description for this page.
@@ -7,6 +5,7 @@ image: https://dmccreary.github.io/mkdocs-material-social/img/local-image.png  #
 og:image: https://dmccreary.github.io/mkdocs-material-social/img/local-image.png  # optional redundancy
 twitter:image: https://dmccreary.github.io/mkdocs-material-social/img/local-image.png  # optional
 ---
+<meta property="og:image" content="https://dmccreary.github.io/mkdocs-material-social/img/local-image.png" />
 
 # Test of Metadata Override
 
