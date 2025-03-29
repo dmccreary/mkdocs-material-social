@@ -1,11 +1,13 @@
 ---
 title: My Custom Page Title
 description: A custom description for this page.
-image: https://dmccreary.github.io/mkdocs-material-social/img/local-image.png  # relative to site root
-og:image: https://dmccreary.github.io/mkdocs-material-social/img/local-image.png  # optional redundancy
-twitter:image: https://dmccreary.github.io/mkdocs-material-social/img/local-image.png  # optional
+image: https://dmccreary.github.io/mkdocs-material-social/img/local-image.png
+og:image: https://dmccreary.github.io/mkdocs-material-social/img/local-image.png
+twitter:image: https://dmccreary.github.io/mkdocs-material-social/img/local-image.png
 ---
+<!--
 <meta property="og:image" content="https://dmccreary.github.io/mkdocs-material-social/img/local-image.png" />
+-->
 
 # Test of Metadata Override
 
