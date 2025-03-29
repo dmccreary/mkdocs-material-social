@@ -16,7 +16,8 @@ nav:
     - Sphere: sims/sphere/index.md
     - Override Test: sims/override-test/index.md
     - Template: sims/template/index.md
-    - Grid Test: ../grid-test.md
+    - Grid Test: sims/grid-test.md
+  - Metadata Override Test: metadata-override-test.md
   - References: references.md
   - Contact: contact.md
   - Test Metadata: test-metadata.md
