@@ -7,3 +7,7 @@ twitter:image: /img/local-image.png  # optional
 ---
 
 # Test of Metadata Override
+
+The following image should be shown when rendered on social media previews:
+
+![](./img/local-image.png)
