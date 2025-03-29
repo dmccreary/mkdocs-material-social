@@ -3,11 +3,3 @@
 {% block head %}
   {% include "partials/head.html" %}
 {% endblock %}
-
-{% block extrahead %}
-  {{ super() }}
-  
-  {% if page and page.meta and page.meta.image %}
-    {% include "partials/social.html" %}
-  {% endif %}
-{% endblock %}
