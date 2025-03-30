@@ -26,7 +26,7 @@
     
     
       
-        <title>Social Image Preview Override From Markdown Metadata v16 - Mkdocs Material Social Card Testing</title>
+        <title>Social Image Preview Override From Markdown Metadata v17 - Mkdocs Material Social Card Testing</title>
       
     
     
@@ -60,7 +60,7 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Social Image Preview Override From Markdown Metadata v16 - Mkdocs Material Social Card Testing" >
+        <meta  property="og:title"  content="Social Image Preview Override From Markdown Metadata v17 - Mkdocs Material Social Card Testing" >
       
         <meta  property="og:description"  content="A custom description for this page." >
       
@@ -76,7 +76,7 @@
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Social Image Preview Override From Markdown Metadata v16 - Mkdocs Material Social Card Testing" >
+        <meta  name="twitter:title"  content="Social Image Preview Override From Markdown Metadata v17 - Mkdocs Material Social Card Testing" >
       
         <meta  name="twitter:description"  content="A custom description for this page." >
       
@@ -87,34 +87,52 @@
   
   
   
-    <!-- Add these meta tags early in the head to override any later ones -->
-    <link rel="preconnect" href="https://dmccreary.github.io/mkdocs-material-social/">
-    <meta property="og:image" content="https://dmccreary.github.io/mkdocs-material-social//img/local-image-2.png">
-    <meta name="twitter:image" content="https://dmccreary.github.io/mkdocs-material-social//img/local-image-2.png">
+    <!-- Add our own meta tags with custom IDs -->
+    <meta property="og:image" content="https://dmccreary.github.io/mkdocs-material-social//img/local-image-2.png" id="custom-og-image">
+    <meta name="twitter:image" content="https://dmccreary.github.io/mkdocs-material-social//img/local-image-2.png" id="custom-twitter-image">
     
-    <!-- Script to replace metadata -->
+    <!-- Add inline JavaScript that executes immediately -->
     <script>
-      // This script runs as soon as it's loaded, before DOMContentLoaded
       (function() {
-        // Create a mutation observer to watch for meta tags
-        var observer = new MutationObserver(function(mutations) {
-          mutations.forEach(function(mutation) {
-            if (mutation.type === 'childList') {
-              var metaTags = document.querySelectorAll('meta[property="og:image"], meta[name="twitter:image"]');
-              
-              metaTags.forEach(function(tag) {
-                var content = tag.getAttribute('content');
-                if (content && content.includes('/assets/images/social/')) {
-                  // Replace content with our custom image
-                  tag.setAttribute('content', 'https://dmccreary.github.io/mkdocs-material-social//img/local-image-2.png');
-                }
-              });
-            }
-          });
-        });
+        // Set a class on the HTML tag to identify our custom processing
+        document.documentElement.classList.add('custom-social-meta');
         
-        // Start observing the document head
-        observer.observe(document.head, { childList: true, subtree: true });
+        // Create an iframe to trick social media crawlers
+        var iframe = document.createElement('iframe');
+        iframe.style.display = 'none';
+        iframe.srcdoc = '<html><head>' + 
+          '<meta property="og:image" content="https://dmccreary.github.io/mkdocs-material-social//img/local-image-2.png">' + 
+          '<meta name="twitter:image" content="https://dmccreary.github.io/mkdocs-material-social//img/local-image-2.png">' + 
+          '</head><body></body></html>';
+        document.head.appendChild(iframe);
+        
+        // Function to change meta tags content
+        function updateMetaTags() {
+          var ogTags = document.querySelectorAll('meta[property="og:image"]');
+          var twitterTags = document.querySelectorAll('meta[name="twitter:image"]');
+          
+          // Replace all og:image tags except our custom one
+          for (var i = 0; i < ogTags.length; i++) {
+            var tag = ogTags[i];
+            if (tag.id !== 'custom-og-image' && tag.content.includes('/assets/images/social/')) {
+              tag.parentNode.removeChild(tag);
+            }
+          }
+          
+          // Replace all twitter:image tags except our custom one
+          for (var i = 0; i < twitterTags.length; i++) {
+            var tag = twitterTags[i];
+            if (tag.id !== 'custom-twitter-image' && tag.content.includes('/assets/images/social/')) {
+              tag.parentNode.removeChild(tag);
+            }
+          }
+        }
+        
+        // Run immediately
+        updateMetaTags();
+        
+        // Also run when DOM is loaded to catch any late additions
+        document.addEventListener('DOMContentLoaded', updateMetaTags);
       })();
     </script>
   
@@ -131,7 +149,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#test-of-metadata-override-v16" class="md-skip">
+        <a href="#test-of-metadata-override-v17" class="md-skip">
           Skip to content
         </a>
       
@@ -166,7 +184,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Social Image Preview Override From Markdown Metadata v16
+              Social Image Preview Override From Markdown Metadata v17
             
           </span>
         </div>
@@ -564,7 +582,7 @@
 <meta property="og:image" content="https://dmccreary.github.io/mkdocs-material-social/img/local-image.png" />
 -->
 
-<h1 id="test-of-metadata-override-v16">Test of Metadata Override v16</h1>
+<h1 id="test-of-metadata-override-v17">Test of Metadata Override v17</h1>
 <p>The following image should be shown when rendered on social media previews:</p>
 <p>Relative Link to <code>img/local-image.png</code>:
 <img alt="" src="../img/local-image.png" /></p>
