@@ -42,6 +42,7 @@ theme:
 plugins:
   - search
   - social
+  - social_override
 extra_css:
   - css/extra.css
 markdown_extensions:
