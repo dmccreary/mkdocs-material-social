@@ -84,59 +84,6 @@
       
     
     
-  
-  
-  
-    <!-- Add our own meta tags with custom IDs -->
-    <meta property="og:image" content="https://dmccreary.github.io/mkdocs-material-social//img/local-image-2.png" id="custom-og-image">
-    <meta name="twitter:image" content="https://dmccreary.github.io/mkdocs-material-social//img/local-image-2.png" id="custom-twitter-image">
-    
-    <!-- Add inline JavaScript that executes immediately -->
-    <script>
-      (function() {
-        // Set a class on the HTML tag to identify our custom processing
-        document.documentElement.classList.add('custom-social-meta');
-        
-        // Create an iframe to trick social media crawlers
-        var iframe = document.createElement('iframe');
-        iframe.style.display = 'none';
-        iframe.srcdoc = '<html><head>' + 
-          '<meta property="og:image" content="https://dmccreary.github.io/mkdocs-material-social//img/local-image-2.png">' + 
-          '<meta name="twitter:image" content="https://dmccreary.github.io/mkdocs-material-social//img/local-image-2.png">' + 
-          '</head><body></body></html>';
-        document.head.appendChild(iframe);
-        
-        // Function to change meta tags content
-        function updateMetaTags() {
-          var ogTags = document.querySelectorAll('meta[property="og:image"]');
-          var twitterTags = document.querySelectorAll('meta[name="twitter:image"]');
-          
-          // Replace all og:image tags except our custom one
-          for (var i = 0; i < ogTags.length; i++) {
-            var tag = ogTags[i];
-            if (tag.id !== 'custom-og-image' && tag.content.includes('/assets/images/social/')) {
-              tag.parentNode.removeChild(tag);
-            }
-          }
-          
-          // Replace all twitter:image tags except our custom one
-          for (var i = 0; i < twitterTags.length; i++) {
-            var tag = twitterTags[i];
-            if (tag.id !== 'custom-twitter-image' && tag.content.includes('/assets/images/social/')) {
-              tag.parentNode.removeChild(tag);
-            }
-          }
-        }
-        
-        // Run immediately
-        updateMetaTags();
-        
-        // Also run when DOM is loaded to catch any late additions
-        document.addEventListener('DOMContentLoaded', updateMetaTags);
-      })();
-    </script>
-  
-
   </head>
   
   
