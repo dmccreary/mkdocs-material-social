@@ -1,9 +1,9 @@
 ---
 title: Bouncing Ball Social Image Preview
 description: A MicroSim of a bouncing ball.
-image: https://dmccreary.github.io/mkdocs-material-social/sims/bouncing-ball/bouncing-ball.png
-og:image: https://dmccreary.github.io/mkdocs-material-social/sims/bouncing-ball/bouncing-ball.png
-twitter:image: https://dmccreary.github.io/mkdocs-material-social/sims/bouncing-ball/bouncing-ball.png
+image: /sims/bouncing-ball/bouncing-ball.png
+og:image: /sims/bouncing-ball/bouncing-ball.png
+twitter:image: /sims/bouncing-ball/bouncing-ball.png
 social:
    cards: false
 ---
