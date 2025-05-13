@@ -1,9 +1,0 @@
-<!-- Custom social media tags -->
-{% if page and page.meta %}
-  {% if page.meta.image %}
-    <!-- Remove any existing meta tags by not including them -->
-    <meta property="og:image" content="{{ config.site_url }}/{{ page.meta.image }}">
-    <meta name="twitter:image" content="{{ config.site_url }}/{{ page.meta.image }}">
-    <meta name="twitter:card" content="summary_large_image">
-  {% endif %}
-{% endif %}
