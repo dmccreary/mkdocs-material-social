@@ -1,9 +1,9 @@
 ---
 title: Bouncing Ball Social Image Preview
 description: A MicroSim of a bouncing ball.
-image: https://dmccreary.github.io/mkdocs-material-social/sims/override-test/green-circle.png
-og:image: https://dmccreary.github.io/mkdocs-material-social/sims/override-test/green-circle.png
-twitter:image: https://dmccreary.github.io/mkdocs-material-social/sims/override-test/green-circle.png
+image: /sims/override-test/green-circle.png
+og:image: /sims/override-test/green-circle.png
+twitter:image: /sims/override-test/green-circle.png
 social:
    cards: false
 ---
