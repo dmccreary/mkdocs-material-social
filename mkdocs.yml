@@ -46,6 +46,7 @@ plugins:
 extra_css:
   - css/extra.css
 markdown_extensions:
+   - meta
    - attr_list
    - md_in_html
    - admonition
